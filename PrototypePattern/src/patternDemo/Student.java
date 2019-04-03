@@ -1,15 +1,53 @@
 package patternDemo;
 
 
-public  class Student {
+public class Student implements Cloneable {
     private String name;
     private int age;
     private int msv;
 
-    public Student(BuildStudent buildStudent) {
-        this.name = buildStudent.name;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getMsv() {
+        return msv;
+    }
+
+    public void setMsv(int msv) {
+        this.msv = msv;
+    }
+
+    public Student(String name, int age, int msv) {
+        this.name = name;
         this.age = age;
         this.msv = msv;
+    }
+
+    public Student() {
+    }
+
+    @Override
+    protected Object clone(){
+        try {
+            return super.clone();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override
@@ -19,21 +57,5 @@ public  class Student {
                 ", age=" + age +
                 ", msv=" + msv +
                 '}';
-    }
-
-    public static class BuildStudent {
-        private String name;
-        private int age;
-        private int msv;
-
-        public BuildStudent(String name, int age, int msv) {
-            this.name = name;
-            this.age = age;
-            this.msv = msv;
-        }
-
-        public Student creatStudent() {
-            return new Student(this);
-        }
     }
 }

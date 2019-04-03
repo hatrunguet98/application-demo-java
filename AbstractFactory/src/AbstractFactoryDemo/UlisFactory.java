@@ -1,4 +1,4 @@
-package factoryPatternDemo;
+package AbstractFactoryDemo;
 
 import model.Student;
 import model.StudentUlis;

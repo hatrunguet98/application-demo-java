@@ -1,6 +1,6 @@
 package model;
 
-public class StudentUet implements Student {
+public class StudentUet extends Student {
     private String name;
     private String university="UET";
 
@@ -24,7 +24,6 @@ public class StudentUet implements Student {
         System.out.println("Name:"+name+" University:"+university);
     }
 
-    @Override
     public void setName(String name) {
         this.name=name;
     }

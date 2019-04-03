@@ -1,6 +1,6 @@
 package model;
 
-public class StudentUlis implements Student{
+public class StudentUlis extends Student{
     private String name;
     private String university="ULIS";
 

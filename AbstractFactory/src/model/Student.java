@@ -1,6 +1,6 @@
 package model;
 
-public interface  Student {
-    void showInfo();
-    void setName(String name);
+public abstract class Student {
+    public void showInfo() {
+        }
 }
