@@ -1,11 +1,13 @@
 package demo;
 
-import adapter.StudentImpe;
+import adapter.StudentAdapter;
+import oject.Location;
+import oject.Student;
 
 public class Main {
     public static void main(String[] args) {
-        StudentImpe studentImpe=new StudentImpe();
-        studentImpe.study("uet","G");
-        studentImpe.study("ulis","A");
+        Student student= new StudentAdapter(new Location("G2"));
+        student.study("uet");
     }
+
 }

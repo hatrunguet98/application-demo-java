@@ -2,46 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b510c6ab-082c-403a-840b-baea7bab6080" name="Default Changelist" comment="Add project BuildPattern">
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/AbstractFactory.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/AbstractFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/FactyoryClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/PatternDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/UetFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/UlisFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/model/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/model/StudentUet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/model/StudentUlis.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuildPattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BuildPattern/patternDemo/Demo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BuildPattern/patternDemo/Student$BuildStudent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BuildPattern/patternDemo/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FactoryPattern/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrototypePattern/PrototypePattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrototypePattern/out/production/PrototypePattern/patternDemo/Demo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PrototypePattern/out/production/PrototypePattern/patternDemo/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fileIOJava/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/AbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/FactyoryClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/FactyoryClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/PatternDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/PatternDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/UetFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/UetFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/UlisFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactory/src/AbstractFactoryDemo/UlisFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AbstractFactory/src/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactory/src/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AbstractFactory/src/model/StudentUet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactory/src/model/StudentUet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AbstractFactory/src/model/StudentUlis.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactory/src/model/StudentUlis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/src/oject/UetStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AdapterPattern/src/oject/UlisStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/builder/BuilderStudents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/concrteBuilder/BuilderStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AbstractFactory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AbstractFactory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/AbstractFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/FactyoryClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/PatternDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/UetFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AbstractFactory/out/production/AbstractFactory/factoryPatternDemo/UlisFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/adapter/StudentAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/adapter/StudentAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/adapter/StudentImpe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/demo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/oject/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/oject/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/oject/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/oject/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/oject/UetLocation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/out/production/AdapterPattern/oject/UlisLocation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/src/adapter/StudentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/src/adapter/StudentAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/src/adapter/StudentImpe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/src/adapter/StudentImpe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/src/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/src/demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/src/oject/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/src/oject/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/src/oject/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterPattern/src/oject/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/src/oject/UetLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterPattern/src/oject/UlisLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bridge/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bridge/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BuildPattern/patternDemo/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BuildPattern/patternDemo/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BuildPattern/patternDemo/Student$BuildStudent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BuildPattern/patternDemo/Student.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/patternDemo/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patternDemo/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patternDemo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/patternDemo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/patternDemo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CompositePattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositePattern/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CompositePattern/out/production/CompositePattern/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositePattern/out/production/CompositePattern/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CompositePattern/out/production/CompositePattern/leaf/StudentComponentUlis.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositePattern/out/production/CompositePattern/leaf/StudentComponentUlis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CompositePattern/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositePattern/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CompositePattern/src/leaf/StudentComponentUlis.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CompositePattern/src/leaf/StudentComponentUlis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DecoratorPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DecoratorPattern/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FactoryPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryPattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FactoryPattern/src/factoryPatternDemo/PatternDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryPattern/src/factoryPatternDemo/PatternDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrototypePattern/src/patternDemo/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrototypePattern/src/patternDemo/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PrototypePattern/src/patternDemo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrototypePattern/src/patternDemo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrototypePattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PrototypePattern/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,12 +58,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/patternDemo/Student.java">
+        <entry file="file://$PROJECT_DIR$/src/product/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="285">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/builder/BuilderStudents.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding>
-                <element signature="e#828#829#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/concrteBuilder/BuilderStudent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#builderAge#0;class#BuilderStudent#0" />
+                <element signature="method#builderMsv#0;class#BuilderStudent#0" />
+                <element signature="method#builderBirthday#0;class#BuilderStudent#0" />
+                <element signature="method#builderUniversity#0;class#BuilderStudent#0" />
               </folding>
             </state>
           </provider>
@@ -70,8 +97,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/patternDemo/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="264">
+              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,6 +111,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -94,16 +125,12 @@
         <option value="$PROJECT_DIR$/src/model/Student.java" />
         <option value="$PROJECT_DIR$/src/patternDemo/BuildStudent.java" />
         <option value="$PROJECT_DIR$/src/patternDemo/Student.java" />
+        <option value="$PROJECT_DIR$/src/student/Student.java" />
+        <option value="$PROJECT_DIR$/src/builder/Builder.java" />
+        <option value="$PROJECT_DIR$/src/builder/BuilderStudents.java" />
+        <option value="$PROJECT_DIR$/src/concrteBuilder/BuilderStudent.java" />
+        <option value="$PROJECT_DIR$/src/product/Student.java" />
         <option value="$PROJECT_DIR$/src/patternDemo/Demo.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-        <option value="$PROJECT_DIR$/../PrototypePattern/PrototypePattern.iml" />
       </list>
     </option>
   </component>
@@ -121,7 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,17 +164,37 @@
               <item name="BuildPattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="BuildPattern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BuildPattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BuildPattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="concrteBuilder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BuildPattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BuildPattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="patternDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BuildPattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BuildPattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Shelf.Project.Settings" />
   </component>
   <component name="RunDashboard">
@@ -187,15 +233,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26342005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32937366" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
@@ -206,6 +252,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -220,29 +267,67 @@
     <MESSAGE value="Add project BuildPattern" />
     <option name="LAST_COMMIT_MESSAGE" value="Add project BuildPattern" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/concrteBuilder/BuilderStudent.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/concrteBuilder/BuilderStudent.java</url>
+          <line>37</line>
+          <properties class="concrteBuilder.BuilderStudent" method="builderUniversity">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/model.java" />
-    <entry file="file://$PROJECT_DIR$/src/patternDemo/BuildStudent.java">
+    <entry file="file://$PROJECT_DIR$/src/patternDemo/BuildStudent.java" />
+    <entry file="file://$PROJECT_DIR$/src/product/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="285">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/patternDemo/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/builder/BuilderStudents.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
-            <element signature="e#828#829#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/concrteBuilder/BuilderStudent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#builderAge#0;class#BuilderStudent#0" />
+            <element signature="method#builderMsv#0;class#BuilderStudent#0" />
+            <element signature="method#builderBirthday#0;class#BuilderStudent#0" />
+            <element signature="method#builderUniversity#0;class#BuilderStudent#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/patternDemo/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="264">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

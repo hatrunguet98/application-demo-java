@@ -1,10 +1,8 @@
 package leaf;
 
-
 import baseComponent.StudentComponent;
 
 public class StudentComponentUlis implements StudentComponent {
-
     private String name;
     private int age;
 
@@ -20,6 +18,6 @@ public class StudentComponentUlis implements StudentComponent {
 
     @Override
     public void getUniversity() {
-        System.out.println(this.name+"'s university is: Uet");
+        System.out.println(this.name+"'s university is: Ulis");
     }
 }
