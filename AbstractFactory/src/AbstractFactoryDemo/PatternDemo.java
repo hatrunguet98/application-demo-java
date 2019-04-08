@@ -1,7 +1,6 @@
 package AbstractFactoryDemo;
 
 import model.Student;
-
 import java.util.Scanner;
 
 public class PatternDemo {
