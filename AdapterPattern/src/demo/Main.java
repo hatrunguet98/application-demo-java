@@ -9,5 +9,4 @@ public class Main {
         Student student= new StudentAdapter(new Location("G2"));
         student.study("uet");
     }
-
 }

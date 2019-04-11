@@ -1,6 +1,7 @@
-package AbstractFactoryDemo;
-
+import AbstractFactoryDemo.FactyoryClass;
+import AbstractFactoryDemo.UetFactory;
 import model.Student;
+
 import java.util.Scanner;
 
 public class PatternDemo {

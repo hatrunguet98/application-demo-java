@@ -1,8 +1,8 @@
 package model;
 
-public class StudentUlis extends Student{
+public class StudentUlis extends Student {
     private String name;
-    private String university="ULIS";
+    private String university = "ULIS";
 
     public StudentUlis() {
     }
@@ -25,6 +25,6 @@ public class StudentUlis extends Student{
 
     @Override
     public void showInfo() {
-        System.out.println("Name:"+name+" University:"+university);
+        System.out.println("Name:" + name + " University:" + university);
     }
 }

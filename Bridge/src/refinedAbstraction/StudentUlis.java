@@ -2,7 +2,7 @@ package refinedAbstraction;
 
 import abstraction.Club;
 
-public class StudentUlis extends Student{
+public class StudentUlis extends Student {
 
     public StudentUlis(Club club, String name) {
         super(club, name);

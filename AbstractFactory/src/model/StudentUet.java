@@ -2,7 +2,7 @@ package model;
 
 public class StudentUet extends Student {
     private String name;
-    private String university="UET";
+    private String university = "UET";
 
     public StudentUet() {
     }
@@ -21,10 +21,10 @@ public class StudentUet extends Student {
 
     @Override
     public void showInfo() {
-        System.out.println("Name:"+name+" University:"+university);
+        System.out.println("Name:" + name + " University:" + university);
     }
 
     public void setName(String name) {
-        this.name=name;
+        this.name = name;
     }
 }
