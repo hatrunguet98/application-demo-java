@@ -4,5 +4,5 @@ import model.user.Host;
 
 import java.util.ArrayList;
 
-public class HostToFile extends DaoToFile<Host> {
+public class HostFile extends DaoToFile<Host> {
 }

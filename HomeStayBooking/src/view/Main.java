@@ -1,28 +1,27 @@
 package view;
 
-import service.dao.HostToFile;
-
+import model.saleitem.typeitem.SaleItem;
+import model.saleitem.typeitem.SingleRoom;
+import service.dao.SaleItemFile;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main {
-    private static void clearConsole() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-    }
-
+//    private static void clearConsole() {
+//        System.out.print("\033[H\033[2J");
+//        System.out.flush();
+//    }
     public static void main(String[] args) {
 //        ArrayList<Host> hostArrayList = new ArrayList<>();
 //        Host host = new Host("12", "Trung", "Nd", 234, 23452345, 6);
 //        hostArrayList.add(host);
-//        new HostToFile().save(hostArrayList);
-        ArrayList listHost = new HostToFile().get();
-        Scanner scanner = new Scanner(System.in);
-        System.out.printf("Đăng nhập với tư cách \n");
-        System.out.printf("Host: 1 \n");
-        System.out.printf("Renter: 2 \n");
-        String userIndex = scanner.nextLine();
-        System.out.printf("\n");
+//        new HostFile().save(hostArrayList);
+//        ArrayList listHost = new HostFile().get();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.printf("Đăng nhập với tư cách \n");
+//        System.out.printf("Host: 1 \n");
+//        System.out.printf("Renter: 2 \n");
+//        String userIndex = scanner.nextLine();
+//        System.out.printf("\n");
 //        while (!userIndex.equals("0"))
 //        if(userIndex.equals("1")){
 //            System.out.printf("User name:");
@@ -34,5 +33,12 @@ public class Main {
 //            }
 //            else System.out.printf("Đăng nhập thất bại \n");
 //        }
+//            User host = new Host("12", "Trung","Trung","Nd", 234, 23452345, 6);
+//        new ViewHost(host).viewHost();
+        SingleRoom saleItem = (SingleRoom) new SaleItem.SaleItemBuilder("2",30,40,"5","resost","updat:22/10","nd").build(); //SaleItemBuilder("1",30,40,100000,"resost","updat:22/10","nd","1").build();
+        ArrayList<SaleItem> list= new ArrayList<>();
+        list= new SaleItemFile().get();
+        System.out.printf(list.get(0).toString());
     }
+
 }
