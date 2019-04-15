@@ -4,7 +4,7 @@
 //
 //import java.util.ArrayList;
 //
-//public class SingleRoom extends SaleItem {
+//public class SingleRoom extends SelectSaleItem {
 //    public SingleRoom() {
 //    }
 //

@@ -1,10 +1,5 @@
 package view;
 
-import model.saleitem.typeitem.SaleItem;
-import model.saleitem.typeitem.SingleRoom;
-import service.dao.SaleItemFile;
-import java.util.ArrayList;
-
 public class Main {
 //    private static void clearConsole() {
 //        System.out.print("\033[H\033[2J");
@@ -34,11 +29,11 @@ public class Main {
 //            else System.out.printf("Đăng nhập thất bại \n");
 //        }
 //            User host = new Host("12", "Trung","Trung","Nd", 234, 23452345, 6);
-//        new ViewHost(host).viewHost();
-        SingleRoom saleItem = (SingleRoom) new SaleItem.SaleItemBuilder("2",30,40,"5","resost","updat:22/10","nd").build(); //SaleItemBuilder("1",30,40,100000,"resost","updat:22/10","nd","1").build();
-        ArrayList<SaleItem> list= new ArrayList<>();
-        list= new SaleItemFile().get();
-        System.out.printf(list.get(0).toString());
+////        new ViewHost(host).viewHost();
+//        SingleRoom saleItem = (SingleRoom) new SelectSaleItem.SaleItemBuilder("2",30,40,5d,"resost","updat:22/10","nd", new ArrayList<>(),"").build(); //SaleItemBuilder("1",30,40,100000,"resost","updat:22/10","nd","1").build();
+//        ArrayList<SelectSaleItem> list= new ArrayList<>();
+//        list= new SaleItemFile().get();
+//        System.out.printf(list.get(0).toString());
     }
 
 }

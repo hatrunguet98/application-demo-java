@@ -4,7 +4,7 @@
 //
 //import java.util.ArrayList;
 //
-//public class SharedHouse extends SaleItem {
+//public class SharedHouse extends SelectSaleItem {
 //
 //    public SharedHouse() {
 //    }

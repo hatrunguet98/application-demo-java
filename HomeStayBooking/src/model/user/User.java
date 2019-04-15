@@ -1,8 +1,5 @@
 package model.user;
 
-import model.booking.Booking;
-import model.saleitem.typeitem.SaleItem;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 

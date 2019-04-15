@@ -1,4 +1,4 @@
-package service.dao;
+package dao;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -38,4 +38,19 @@ public abstract class DaoToFile<T> implements IDao {
         }
         return arrayList;
     }
+
+    @Override
+    public void delete(ArrayList listT) {
+        try {
+            fout = new FileOutputStream("./" + this.getClass().getSimpleName() + ".txt", true);
+            fout.close();
+            bout = new ObjectOutputStream(fout);
+            bout.writeObject(listT);
+            bout.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

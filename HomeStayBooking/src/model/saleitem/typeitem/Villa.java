@@ -4,7 +4,7 @@
 //
 //import java.util.ArrayList;
 //
-//public class Villa extends SaleItem {
+//public class Villa extends SelectSaleItem {
 //
 //    public Villa() {
 //    }
