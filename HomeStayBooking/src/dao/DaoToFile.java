@@ -15,7 +15,9 @@ public abstract class DaoToFile<T> implements IDao {
             fout = new FileOutputStream("./" + this.getClass().getSimpleName() + ".txt", true);
             bout = new ObjectOutputStream(fout);
             bout.writeObject(listT);
+            bout.flush();
             bout.close();
+            fout.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -42,11 +44,12 @@ public abstract class DaoToFile<T> implements IDao {
     @Override
     public void delete(ArrayList listT) {
         try {
-            fout = new FileOutputStream("./" + this.getClass().getSimpleName() + ".txt", true);
-            fout.close();
+            fout = new FileOutputStream("./" + this.getClass().getSimpleName() + ".txt", false);
             bout = new ObjectOutputStream(fout);
+            bout.flush();
             bout.writeObject(listT);
             bout.close();
+            fout.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
