@@ -21,12 +21,19 @@ public class SelectSaleItem implements ISelect<SaleItem> {
         return listSaleItem;
     }
 
+<<<<<<< HEAD
     @Override
     public SaleItem getById(String id) {
         listSaleItemFile = new SaleItemFile().get();
         SaleItem saleItem = new SaleItem();
         for (int i = 0; i < listSaleItemFile.size(); i++) {
             saleItem = listSaleItemFile.get(i);
+=======
+    public SaleItem getById(String id, ArrayList<SaleItem> saleItemsList) {
+        SaleItem saleItem = new SaleItem();
+        for (int i = 0; i < saleItemsList.size(); i++) {
+            saleItem = saleItemsList.get(i);
+>>>>>>> 514485acaba8a92d2da7c95e450432b09a2c710f
             if (saleItem.getId().equalsIgnoreCase(id)) {
                 break;
             }
@@ -60,6 +67,7 @@ public class SelectSaleItem implements ISelect<SaleItem> {
     }
 
     @Override
+<<<<<<< HEAD
     public void sortByIssueDate(ArrayList<SaleItem> listSaleItem) {
         listSaleItem.sort(Comparator.comparing(SaleItem::getIssueAudit));
     }
@@ -79,6 +87,35 @@ public class SelectSaleItem implements ISelect<SaleItem> {
         listSaleItem = new ArrayList<>();
         for (int i = 0; i < listSaleItemFile.size(); i++) {
             SaleItem saleItem = listSaleItemFile.get(i);
+=======
+    public ArrayList<SaleItem> sortByIssueDate(ArrayList<SaleItem> listSaleItem) {
+        listSaleItem.sort(Comparator.comparing(SaleItem::getIssueAudit));
+        return listSaleItem;
+    }
+
+    @Override
+    public ArrayList<SaleItem> sortById(ArrayList<SaleItem> listSaleItem) {
+        listSaleItem.sort(Comparator.comparing(SaleItem::getId));
+        return listSaleItem;
+    }
+
+    @Override
+    public ArrayList<SaleItem> sortByType(ArrayList<SaleItem> listSaleItem) {
+        listSaleItem.sort(Comparator.comparing(SaleItem::getType));
+        return listSaleItem;
+    }
+
+    @Override
+    public ArrayList<SaleItem> sortByAddress(ArrayList<SaleItem> listSaleItem) {
+        listSaleItem.sort(Comparator.comparing(SaleItem::getAddress));
+        return listSaleItem;
+    }
+
+    public ArrayList<SaleItem> getByType(String type, ArrayList<SaleItem> saleItemsList) {
+        listSaleItem = new ArrayList<>();
+        for (int i = 0; i < saleItemsList.size(); i++) {
+            SaleItem saleItem = saleItemsList.get(i);
+>>>>>>> 514485acaba8a92d2da7c95e450432b09a2c710f
             if (saleItem.getType().equalsIgnoreCase(type)) {
                 listSaleItem.add(saleItem);
             }
@@ -86,13 +123,30 @@ public class SelectSaleItem implements ISelect<SaleItem> {
         return listSaleItem;
     }
 
+<<<<<<< HEAD
+=======
+    public ArrayList<SaleItem> getByAddress(String address, ArrayList<SaleItem> saleItemsList) {
+        listSaleItem = new ArrayList<>();
+        for (int i = 0; i < saleItemsList.size(); i++) {
+            SaleItem saleItem = saleItemsList.get(i);
+            if (saleItem.getAddress().equalsIgnoreCase(address)) {
+                listSaleItem.add(saleItem);
+            }
+        }
+        return listSaleItem;
+    }
+
+>>>>>>> 514485acaba8a92d2da7c95e450432b09a2c710f
     public void sortByPrice(ArrayList<SaleItem> listSaleItem) {
         listSaleItem.sort(Comparator.comparing(SaleItem::getTotalPrice));
     }
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 514485acaba8a92d2da7c95e450432b09a2c710f
 }
