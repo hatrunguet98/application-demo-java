@@ -1,5 +1,6 @@
 package GEMVN.config;
 
+import GEMVN.service.UserDetailsServiceIml;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    private UserDetailsService userDetailsService;
+    private UserDetailsServiceIml userDetailsServiceIml;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -25,7 +26,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+        auth.userDetailsService(userDetailsServiceIml).passwordEncoder(passwordEncoder());
     }
 
     @Override

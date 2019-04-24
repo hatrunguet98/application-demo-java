@@ -35,7 +35,7 @@ public class CreatedData implements ApplicationListener<ContextRefreshedEvent> {
         }
 
         // Admin account
-        if (userRepository.findByUserName("admin@gmail.com") == null) {
+        if (userRepository.findByUserName("admin") == null) {
             User admin = new User();
             admin.setPasswork("admin@gmail.com");
             admin.setPasswork(passwordEncoder.encode("123456"));
@@ -47,7 +47,7 @@ public class CreatedData implements ApplicationListener<ContextRefreshedEvent> {
         }
 
         // Member account
-        if (userRepository.findByUserName("member@gmail.com") == null) {
+        if (userRepository.findByUserName("member") == null) {
             User user = new User();
             user.setUserName("member@gmail.com");
             user.setPasswork(passwordEncoder.encode("123456"));

@@ -15,7 +15,7 @@ import java.beans.Transient;
 import java.util.HashSet;
 import java.util.Set;
 
-@Service("userDetailsService")
+@Service
 public class UserDetailsServiceIml implements UserDetailsService {
     @Autowired
     UserRepository userRepository;
