@@ -39,5 +39,6 @@ public class ViewReportTest {
     public void testGetBookingDayAgo2() {
         ArrayList<Booking> bookingList = new view.host.ViewReport("12").listBookingDayAgo(bookings);
         assertEquals(1,bookingList.size());
+
     }
 }

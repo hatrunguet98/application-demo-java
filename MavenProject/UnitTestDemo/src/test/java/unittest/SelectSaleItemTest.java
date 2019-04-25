@@ -1,20 +1,30 @@
 package unittest;
 
+import dao.SaleItemFile;
 import model.saleitem.SaleItem;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.theories.DataPoint;
+import org.junit.experimental.theories.DataPoints;
+import org.junit.experimental.theories.Theories;
+import org.junit.experimental.theories.Theory;
+import org.junit.runner.RunWith;
 import service.select.SelectSaleItem;
 
 import java.util.ArrayList;
 import java.util.Date;
 
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.*;
+
+@RunWith(Theories.class)
 public class SelectSaleItemTest {
     ArrayList<SaleItem> saleItems;
     SaleItem saleItem;
 
     @Before
-    private void setUp() {
-        saleItems= new ArrayList<>();
+    public void setUp() {
+        saleItems = new ArrayList<>();
         Date date = new Date();
         long DAY_IN_MS = 1000 * 60 * 60 * 24;
         Date date5 = new Date(date.getTime() - (5 * DAY_IN_MS));
@@ -36,9 +46,51 @@ public class SelectSaleItemTest {
         saleItems.add(new SaleItem.SaleItemBuilder(30, "Villa", 1.8, "Nha Trang", "12", 8, 2500000).setCreatedAudit(date5).setDescribe("View nhin bien").setAcreage(150).build());
     }
 
-    @Test(timeout = 100)
-    public void getListSaleItemByHostTest() {
-        saleItems = new SelectSaleItem().getByHostId("12");
+    @DataPoints
+    public static int[][] data() {
+        return new int[][]{{1, 0}, {2, 1}, {3, 2}, {4, 3}, {10, 9}, {261, 13}, {323, 12}};
     }
 
+    @Theory
+    public void getByIdTest(final int[] inputs) {
+        assertEquals(saleItems.get(inputs[1]).getId(), inputs[0]);
+    }
+
+    @Test(timeout = 100)
+    public void getListByHostTest() {
+        ArrayList<SaleItem> listSaleItem = new SelectSaleItem().getByHostId("12");
+    }
+
+    @Test
+    public void sortByIdTest() {
+        int[] arrTest = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20, 28, 30, 261, 323};
+        ArrayList arrTest1 = new ArrayList();
+        for (int i = 0; i < arrTest.length; i++) {
+            arrTest1.add(arrTest[i]);
+        }
+        ArrayList<SaleItem> saleItemList = new SelectSaleItem().sortById(saleItems);
+        ArrayList arrTest2 = new ArrayList();
+        int i = 0;
+        for (SaleItem saleItem : saleItemList) {
+            arrTest2.add(saleItem.getId());
+        }
+        assertThat(arrTest1, is(arrTest2));
+    }
+
+    @Test
+    public void getByTypeTest() {
+        int[] arrTest = {2, 3, 10, 11};
+        ArrayList arrTest1 = new ArrayList();
+        for (int i = 0; i < arrTest.length; i++) {
+            arrTest1.add(arrTest[i]);
+        }
+        ArrayList<SaleItem> saleItemList = new SelectSaleItem().getByType("House", saleItems);
+        ArrayList arrTest2 = new ArrayList();
+        int i = 0;
+        for (SaleItem saleItem : saleItemList) {
+            arrTest2.add(saleItem.getId());
+        }
+
+        assertThat(arrTest1, is(arrTest2));
+    }
 }
