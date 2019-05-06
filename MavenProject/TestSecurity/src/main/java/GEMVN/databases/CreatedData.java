@@ -27,7 +27,7 @@ public class CreatedData implements ApplicationListener<ContextRefreshedEvent> {
     public void onApplicationEvent(ContextRefreshedEvent arg0) {
         // Roles
         if (roleRepository.findByName("ROLE_ADMIN") == null) {
-            roleRepository.save(new Role("ROLE_ADMIN"));
+                roleRepository.save(new Role("ROLE_ADMIN"));
         }
 
         if (roleRepository.findByName("ROLE_MEMBER") == null) {
