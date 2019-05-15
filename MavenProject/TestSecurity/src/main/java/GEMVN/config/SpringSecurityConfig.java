@@ -1,7 +1,6 @@
 package GEMVN.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -31,20 +30,28 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) {
         try {
-            httpSecurity.
-                    authorizeRequests().antMatchers("/rgeister").permitAll()
-                    .antMatchers("/").hasRole("MEMBER")
-                    .antMatchers("/admin").hasRole("ADMIN")
-                    .and()
+            httpSecurity
+                    .rememberMe().key("remember-me").tokenValiditySeconds(3600);
+            httpSecurity
+                    .authorizeRequests()
+                        .antMatchers("/rgeister").permitAll()
+                        .antMatchers("/").hasRole("MEMBER")
+                        .antMatchers("/admin").hasRole("ADMIN")
+                        .and()
                     .formLogin()
-                    .loginPage("/login")
-                    .usernameParameter("email")
-                    .passwordParameter("password")
-                    .defaultSuccessUrl("/")
-                    .failureUrl("/loign?error")
-                    .and()
-                    .exceptionHandling().accessDeniedPage("/403");
-
+                        .loginPage("/login")
+                        .usernameParameter("username")
+                        .passwordParameter("password")
+                        .defaultSuccessUrl("/")
+                        .failureUrl("/login-error")
+                        .and()
+                        .exceptionHandling().accessDeniedPage("/403")
+                        .and()
+                    .logout()
+                        .logoutUrl("/logout")
+                        .logoutSuccessUrl("/login")
+                        .deleteCookies("remember-me")
+                        .permitAll();
         } catch (Exception e) {
             e.printStackTrace();
         }

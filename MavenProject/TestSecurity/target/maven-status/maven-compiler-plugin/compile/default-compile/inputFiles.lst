@@ -1,0 +1,9 @@
+/home/gem/IdeaProjects/MavenProject/TestSecurity/src/main/java/GEMVN/model/user/Role.java
+/home/gem/IdeaProjects/MavenProject/TestSecurity/src/main/java/GEMVN/databases/CreatedData.java
+/home/gem/IdeaProjects/MavenProject/TestSecurity/src/main/java/GEMVN/config/SpringSecurityConfig.java
+/home/gem/IdeaProjects/MavenProject/TestSecurity/src/main/java/GEMVN/SpringSecurityApplication.java
+/home/gem/IdeaProjects/MavenProject/TestSecurity/src/main/java/GEMVN/controller/MainController.java
+/home/gem/IdeaProjects/MavenProject/TestSecurity/src/main/java/GEMVN/model/user/User.java
+/home/gem/IdeaProjects/MavenProject/TestSecurity/src/main/java/GEMVN/service/UserDetailsServiceIml.java
+/home/gem/IdeaProjects/MavenProject/TestSecurity/src/main/java/GEMVN/dao/RoleRepository.java
+/home/gem/IdeaProjects/MavenProject/TestSecurity/src/main/java/GEMVN/dao/UserRepository.java

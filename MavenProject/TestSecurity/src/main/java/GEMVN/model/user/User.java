@@ -7,20 +7,28 @@ import java.util.Set;
 @Entity
 @Table(name = "user")
 public class User implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private int id;
     @Column(name = "username")
-    private String userName;
-    @Column(name = "passwork")
-    private String passwork;
+    private String username;
+    @Column(name = "password")
+    private String password;
+
+    public User() {
+    }
+
     @ManyToMany
     @JoinTable(
             name = "user_role",
             joinColumns = @JoinColumn(name = "user_id")
             , inverseJoinColumns = @JoinColumn(name = "role_id")
     )
+
+
     private Set<Role> roles;
 
     public int getId() {
@@ -32,11 +40,11 @@ public class User implements Serializable {
     }
 
     public String getUserName() {
-        return userName;
+        return username;
     }
 
     public void setUserName(String userName) {
-        this.userName = userName;
+        this.username = userName;
     }
 
     public Set<Role> getRoles() {
@@ -47,11 +55,11 @@ public class User implements Serializable {
         this.roles = roles;
     }
 
-    public String getPasswork() {
-        return passwork;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPasswork(String passwork) {
-        this.passwork = passwork;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

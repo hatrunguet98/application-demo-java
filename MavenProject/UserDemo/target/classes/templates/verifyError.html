@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bad user</title>
+</head>
+<body>
+    <p th:text="${message}">Error</p>
+    <p >Requests another verification link </p>
+    <form th:action="@{/verifyEmailOther}" method="POST">
+        <input type="email" name="email" placeholder="Your email" /><br />
+        <button type="submit">Send</button> <br />
+    </form>
+</body>
+</html>

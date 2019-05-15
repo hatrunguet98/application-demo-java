@@ -10,20 +10,20 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.beans.Transient;
 import java.util.HashSet;
 import java.util.Set;
 
-@Service("userDetailsService")
+@Service
 public class UserDetailsServiceIml implements UserDetailsService {
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Override
-    @Transient
+    @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByUserName(username);
+        User user = userRepository.findByUsername(username);
         if (user == null) {
             throw new UsernameNotFoundException("User not found");
         }
@@ -33,7 +33,7 @@ public class UserDetailsServiceIml implements UserDetailsService {
             grantedAuthorities.add(new SimpleGrantedAuthority(role.getUserName()));
         }
         return new org.springframework.security.core.userdetails.User(
-                user.getUserName(), user.getPasswork(), grantedAuthorities
+                user.getUserName(), user.getPassword(), grantedAuthorities
         );
     }
 }

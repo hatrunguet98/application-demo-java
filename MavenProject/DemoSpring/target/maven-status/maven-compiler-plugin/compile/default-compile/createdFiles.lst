@@ -1,0 +1,9 @@
+GEMVN/dao/RoleRepository.class
+GEMVN/model/user/Role.class
+databases/CreatedData.class
+GEMVN/config/SpringSecurityConfig.class
+GEMVN/SpringBootSecurityApplication.class
+GEMVN/controller/MainController.class
+GEMVN/service/UserDetailsServiceIml.class
+GEMVN/dao/UserRepository.class
+GEMVN/model/user/User.class

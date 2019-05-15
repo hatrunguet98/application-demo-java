@@ -1,7 +1,5 @@
 package GEMVN.model.user;
 
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
@@ -9,6 +7,7 @@ import java.util.Set;
 @Entity
 @Table(name="role")
 public class Role implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
@@ -17,6 +16,9 @@ public class Role implements Serializable {
     private String name;
     @ManyToMany(mappedBy="roles")
     private Set<User> users;
+
+    public Role() {
+    }
 
     public Role(String name) {
         this.name = name;

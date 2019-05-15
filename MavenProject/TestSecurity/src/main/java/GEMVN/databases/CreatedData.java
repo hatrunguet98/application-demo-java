@@ -1,4 +1,4 @@
-package databases;
+package GEMVN.databases;
 
 import GEMVN.dao.RoleRepository;
 import GEMVN.dao.UserRepository;
@@ -35,9 +35,9 @@ public class CreatedData implements ApplicationListener<ContextRefreshedEvent> {
         }
 
         // Admin account
-        if (userRepository.findByUserName("admin@gmail.com") == null) {
+        if (userRepository.findByUsername("admin@gmail.com") == null) {
             User admin = new User();
-            admin.setPasswork("admin@gmail.com");
+            admin.setUserName("admin@gmail.com");
             admin.setPasswork(passwordEncoder.encode("123456"));
             HashSet<Role> roles = new HashSet<>();
             roles.add(roleRepository.findByName("ROLE_ADMIN"));
@@ -47,7 +47,7 @@ public class CreatedData implements ApplicationListener<ContextRefreshedEvent> {
         }
 
         // Member account
-        if (userRepository.findByUserName("member@gmail.com") == null) {
+        if (userRepository.findByUsername("member@gmail.com") == null) {
             User user = new User();
             user.setUserName("member@gmail.com");
             user.setPasswork(passwordEncoder.encode("123456"));
